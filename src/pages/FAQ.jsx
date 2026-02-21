@@ -144,7 +144,7 @@ const FAQ = () => {
         {
           id: 501,
           question: 'How can my organization partner with DIGIN?',
-          answer: 'We welcome partnerships with corporates (CSR), foundations, government agencies, educational institutions, and other NGOs. Please email us at partnerships@digin.org with details about your organization and potential collaboration areas. Our team will schedule a meeting to explore synergies.'
+          answer: 'We welcome partnerships with corporates (CSR), foundations, government agencies, educational institutions, and other NGOs. Please email us at partnerships@digin.org.in with details about your organization and potential collaboration areas. Our team will schedule a meeting to explore synergies.'
         },
         {
           id: 502,
@@ -177,7 +177,7 @@ const FAQ = () => {
         {
           id: 603,
           question: 'What is your grievance redressal mechanism?',
-          answer: 'If you have any concerns or complaints, please email us at grievances@digin.org. We acknowledge all complaints within 48 hours and resolve them within 15 working days. Serious matters are escalated to our Managing Trustee.'
+          answer: 'If you have any concerns or complaints, please email us at grievances@digin.org.in. We acknowledge all complaints within 48 hours and resolve them within 15 working days. Serious matters are escalated to our Managing Trustee.'
         }
       ]
     }
@@ -407,14 +407,14 @@ const FAQ = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="mailto:info@digin.org"
+                  href="mailto:info@digin.org.in"
                   className="inline-flex items-center justify-center space-x-2 px-6 py-3 bg-white text-amber-600 rounded-xl font-semibold hover:bg-slate-100 transition-all"
                 >
                   <Mail className="w-5 h-5" />
                   <span>Email Us</span>
                 </a>
                 <a
-                  href="tel:+911234567890"
+                  href="tel:+91 99999 99999"
                   className="inline-flex items-center justify-center space-x-2 px-6 py-3 bg-white/20 backdrop-blur-sm text-white rounded-xl font-semibold hover:bg-white/30 transition-all border border-white/30"
                 >
                   <Phone className="w-5 h-5" />

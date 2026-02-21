@@ -43,7 +43,7 @@ const Privacy = () => {
     },
     {
       question: 'How can I access or delete my data?',
-      answer: 'You can request access to, correction, or deletion of your personal data by contacting us at privacy@digin.org. We will respond within 30 days.'
+      answer: 'You can request access to, correction, or deletion of your personal data by contacting us at privacy@digin.org.in. We will respond within 30 days.'
     },
     {
       question: 'How long does DIGIN retain my information?',
@@ -410,11 +410,11 @@ const Privacy = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="p-4 bg-slate-50 dark:bg-slate-900/50 rounded-xl">
                         <p className="text-sm text-slate-500 dark:text-slate-500 mb-1">Email</p>
-                        <p className="font-semibold text-slate-900 dark:text-white">privacy@digin.org</p>
+                        <p className="font-semibold text-slate-900 dark:text-white">privacy@digin.org.in</p>
                       </div>
                       <div className="p-4 bg-slate-50 dark:bg-slate-900/50 rounded-xl">
                         <p className="text-sm text-slate-500 dark:text-slate-500 mb-1">Phone</p>
-                        <p className="font-semibold text-slate-900 dark:text-white">+91 1234567890</p>
+                        <p className="font-semibold text-slate-900 dark:text-white">+91 99999 99999</p>
                       </div>
                       <div className="p-4 bg-slate-50 dark:bg-slate-900/50 rounded-xl md:col-span-2">
                         <p className="text-sm text-slate-500 dark:text-slate-500 mb-1">Address</p>

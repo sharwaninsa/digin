@@ -63,8 +63,8 @@ export const socialLinks = [
 // Contact Information
 export const contactInfo = {
   address: '57, Kotla Village, Shamas Pur, East Delhi, Delhi - 110091',
-  phone: '+91 1234567890',
-  email: 'info@digin.org',
+  phone: '+91 99999 99999',
+  email: 'info@digin.org.in',
   mapLocation: 'https://maps.google.com/?q=57+Kotla+Village+Delhi',
   officeHours: 'Monday - Friday: 9:00 AM - 6:00 PM'
 };

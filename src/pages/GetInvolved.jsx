@@ -218,7 +218,7 @@ const GetInvolved = () => {
                   </p>
                   
                   <a
-                    href="https://pay.online/digin"
+                    href="https://donate.digin.org.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-gradient-to-r from-amber-500 to-amber-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-amber-600 hover:to-amber-700 transition-all transform hover:scale-105 shadow-lg shadow-amber-500/30"
