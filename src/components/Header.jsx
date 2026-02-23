@@ -31,8 +31,8 @@ const Header = () => {
           {/* Logo with enhanced design */}
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="relative">
-              <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl rotate-3 group-hover:rotate-6 transition-all duration-300 shadow-lg shadow-amber-500/30"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-18 h-18 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center rotate-3 group-hover:rotate-6 transition-all duration-300 shadow-lg shadow-amber-500/30">
+              {/*<div className="absolute inset-0 flex items-center justify-center">
                 <Heart className="w-6 h-6 text-white" />
               </div>
             </div>
@@ -42,7 +42,11 @@ const Header = () => {
               </span>
               <span className="text-xs font-medium text-slate-600 dark:text-slate-400 tracking-wider">
                 GRASSROOT IMPACT NETWORK
-              </span>
+              </span> */}
+
+                <img src="src/assets/logo.png" className='w-16 h-16 rounded-full' alt="" />
+                </div>
+
             </div>
           </Link>
 
