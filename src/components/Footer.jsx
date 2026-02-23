@@ -18,6 +18,7 @@ import {
   Award
 } from 'lucide-react';
 import { footerLinks, socialLinks, contactInfo } from '../data/siteData';
+import logo from '../assets/logo.png'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -47,15 +48,16 @@ const Footer = () => {
           <div className="lg:col-span-4 space-y-6">
             <div className="flex items-center space-x-3 group">
               <div className="relative">
-                <div className="w-14 h-14 bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl rotate-3 group-hover:rotate-6 transition-all duration-300 shadow-lg shadow-amber-500/30"></div>
+                <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full cursor-pointer rotate-3 group-hover:rotate-6 transition-all duration-300 shadow-lg shadow-amber-500/30"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <Heart className="w-7 h-7 text-white" />
+                 <img src={logo} alt="" className='rounded-full' />
                 </div>
               </div>
               <div>
                 <h3 className="text-2xl font-bold bg-gradient-to-r from-amber-400 to-amber-300 bg-clip-text text-transparent">
                   DIGIN
                 </h3>
+                <p className="text-xs text-slate-400 tracking-wider">Dynamic Initiative for</p>
                 <p className="text-xs text-slate-400 tracking-wider">Grassroot Impact Network</p>
               </div>
             </div>
@@ -199,7 +201,7 @@ const Footer = () => {
             <p className="text-sm text-slate-400">
               &copy; {currentYear} DIGIN - Dynamic Initiative for Grassroot Impact Network. 
               <span className="mx-2">|</span>
-              Registered under Indian Trust Act, 1990
+              Registered under Indian Trust Act, 1882
             </p>
             
             <div className="flex items-center space-x-4">
