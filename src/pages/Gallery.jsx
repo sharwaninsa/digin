@@ -1,4 +1,4 @@
-// pages/Gallery.jsx - Enhanced Version
+
 import React, { useState } from 'react';
 import { galleryImages } from '../data/siteData';
 import { X, Grid, Layers, Calendar, MapPin, Download, Share2, Heart, ChevronLeft, ChevronRight } from 'lucide-react';

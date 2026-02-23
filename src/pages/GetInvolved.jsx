@@ -1,4 +1,4 @@
-// pages/GetInvolved.jsx - Enhanced Version
+
 import React, { useState } from 'react';
 import { 
   Banknote, 

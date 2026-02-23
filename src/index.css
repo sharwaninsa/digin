@@ -1,7 +1,6 @@
-/* src/index.css - Updated for Tailwind CSS v4 */
+
 @import "tailwindcss";
 
-/* Custom theme configuration using CSS variables */
 @theme {
   --color-primary-light: #ffffff;
   --color-primary-dark: #0f172a;
@@ -11,10 +10,8 @@
   --color-accent-dark: #f59e0b;
 }
 
-/* Dark mode variant */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Custom animations */
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
@@ -42,7 +39,6 @@
   }
 }
 
-/* Custom utilities */
 @utility animate-float {
   animation: float 6s ease-in-out infinite;
 }
@@ -55,7 +51,6 @@
   animation: bounce-slow 2s infinite;
 }
 
-/* Custom components */
 @layer components {
   .glass-effect {
     background-color: rgba(255, 255, 255, 0.1);
@@ -83,7 +78,6 @@
   }
 }
 
-/* Custom base styles */
 @layer base {
   :root {
     --color-primary: #ffffff;
@@ -106,7 +100,6 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Custom scrollbar */
   ::-webkit-scrollbar {
     width: 10px;
   }
@@ -129,7 +122,6 @@
   }
 }
 
-/* Hide scrollbar utility */
 @utility hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;

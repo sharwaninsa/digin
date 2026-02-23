@@ -1,4 +1,4 @@
-// pages/AnnualReports.jsx
+
 import React, { useState } from 'react';
 import { 
   FileText, 
@@ -25,7 +25,7 @@ const AnnualReports = () => {
   const [sortOrder, setSortOrder] = useState('desc');
   const reportsPerPage = 10;
 
-  // Dummy JSON data for annual reports
+
   const reportsData = [
     {
       id: 1,
@@ -249,10 +249,10 @@ const AnnualReports = () => {
     }
   ];
 
-  // Get unique years for filter
+
   const years = ['all', ...new Set(reportsData.map(report => report.financialYear.split('-')[0]))];
 
-  // Filter reports
+
   const filteredReports = reportsData
     .filter(report => 
       (filterYear === 'all' || report.financialYear.startsWith(filterYear)) &&
@@ -270,20 +270,19 @@ const AnnualReports = () => {
       }
     });
 
-  // Pagination
+
   const totalPages = Math.ceil(filteredReports.length / reportsPerPage);
   const indexOfLastReport = currentPage * reportsPerPage;
   const indexOfFirstReport = indexOfLastReport - reportsPerPage;
   const currentReports = filteredReports.slice(indexOfFirstReport, indexOfLastReport);
 
-  // Calculate totals
+
   const totalDownloads = reportsData.reduce((acc, report) => acc + report.downloads, 0);
   const totalViews = reportsData.reduce((acc, report) => acc + report.views, 0);
   const totalBeneficiaries = reportsData[0]?.highlights.beneficiaries || 0;
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0">
           <img
@@ -307,7 +306,6 @@ const AnnualReports = () => {
               Access our detailed annual reports, financial statements, and impact assessments. We believe in complete transparency.
             </p>
 
-            {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
               <div>
                 <div className="text-2xl font-bold text-amber-400">{reportsData.length}</div>
@@ -330,11 +328,11 @@ const AnnualReports = () => {
         </div>
       </section>
 
-      {/* Filters Section */}
+     
       <section className="sticky top-24 z-40 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
-            {/* Search */}
+         
             <div className="relative flex-1 max-w-md">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
               <input
@@ -349,7 +347,7 @@ const AnnualReports = () => {
               />
             </div>
 
-            {/* Filters */}
+      
             <div className="flex items-center space-x-3">
               <div className="flex items-center space-x-2">
                 <Filter className="w-4 h-4 text-slate-500" />
@@ -393,14 +391,14 @@ const AnnualReports = () => {
             </div>
           </div>
 
-          {/* Results count */}
+    
           <div className="mt-2 text-sm text-slate-600 dark:text-slate-400">
             Showing {indexOfFirstReport + 1}-{Math.min(indexOfLastReport, filteredReports.length)} of {filteredReports.length} reports
           </div>
         </div>
       </section>
 
-      {/* Reports Table */}
+  
       <section className="py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden border border-slate-200 dark:border-slate-700">
@@ -468,7 +466,7 @@ const AnnualReports = () => {
               </table>
             </div>
 
-            {/* Empty State */}
+     
             {filteredReports.length === 0 && (
               <div className="text-center py-16">
                 <FileText className="w-16 h-16 text-slate-400 mx-auto mb-4" />
@@ -480,7 +478,7 @@ const AnnualReports = () => {
             )}
           </div>
 
-          {/* Pagination */}
+     
           {totalPages > 1 && (
             <div className="flex justify-center items-center space-x-4 mt-8">
               <button
@@ -515,7 +513,7 @@ const AnnualReports = () => {
         </div>
       </section>
 
-      {/* Highlights Cards */}
+ 
       <section className="py-12 bg-gradient-to-br from-amber-50 to-amber-100/50 dark:from-slate-900 dark:to-slate-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-8 text-slate-900 dark:text-white">

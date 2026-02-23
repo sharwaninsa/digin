@@ -1,4 +1,4 @@
-// pages/OurMission.jsx - Enhanced Version
+
 import React, { useState } from 'react';
 import { missionObjectives } from '../data/siteData';
 import { 

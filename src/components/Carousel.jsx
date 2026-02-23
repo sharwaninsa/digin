@@ -1,4 +1,3 @@
-// components/Carousel.jsx
 import React, { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react';
 import { carouselImages } from '../data/siteData';

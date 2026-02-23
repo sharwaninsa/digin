@@ -1,11 +1,10 @@
-// components/Header.jsx
 import React, { useState, useEffect, useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Sun, Moon, ChevronDown, Heart } from 'lucide-react';
 import { navigationLinks } from '../data/siteData';
 import { ThemeContext } from '../App';
 
-import {logo} from '../assets/logo.png'
+import logo from '../assets/logo.png'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,7 +45,7 @@ const Header = () => {
                 GRASSROOT IMPACT NETWORK
               </span> */}
 
-                <img src={logo} className='w-16 h-16 rounded-full' alt="" />
+                <img src={logo} className='w-16 h-16 rounded-full' alt="Logo" />
                 </div>
 
             </div>

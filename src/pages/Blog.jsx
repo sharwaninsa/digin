@@ -1,4 +1,3 @@
-// pages/Blog.jsx
 import React, { useState } from 'react';
 import { 
   BookOpen, 
@@ -25,7 +24,7 @@ const Blog = () => {
   const [bookmarkedPosts, setBookmarkedPosts] = useState([]);
   const postsPerPage = 6;
 
-  // Dummy JSON data for blog posts
+
   const blogPosts = [
     {
       id: 1,

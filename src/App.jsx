@@ -1,4 +1,3 @@
-// App.jsx - Complete file with dynamic page titles
 import React, { useState, useEffect, createContext } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
@@ -22,7 +21,7 @@ import './index.css';
 
 export const ThemeContext = createContext();
 
-// Title configuration for each route
+
 const routeTitles = {
   '/': 'Home | DIGIN - Dynamic Initiative for Grassroot Impact Network',
   '/about': 'About Us | DIGIN - Our Story & Mission',
@@ -40,29 +39,29 @@ const routeTitles = {
   '/404': 'Page Not Found | DIGIN - Lost in Cyberspace'
 };
 
-// Dynamic Title Component
+
 const DynamicTitle = () => {
   const location = useLocation();
   
   useEffect(() => {
     const getTitle = () => {
-      // Check for exact match first
+ 
       if (routeTitles[location.pathname]) {
         return routeTitles[location.pathname];
       }
       
-      // Check for dynamic routes (like blog posts)
+  
       if (location.pathname.startsWith('/blog/')) {
         return 'Blog Post | DIGIN - Stories of Impact';
       }
       
-      // Default to 404
+     
       return routeTitles['/404'];
     };
 
     document.title = getTitle();
     
-    // Also set meta description for SEO
+   
     let metaDescription = document.querySelector('meta[name="description"]');
     if (!metaDescription) {
       metaDescription = document.createElement('meta');
@@ -70,7 +69,7 @@ const DynamicTitle = () => {
       document.head.appendChild(metaDescription);
     }
     
-    // Dynamic meta descriptions based on route
+   
     const descriptions = {
       '/': 'DIGIN (Dynamic Initiative for Grassroot Impact Network) is a public charitable trust working towards creating sustainable social impact through digital media, education, and community engagement.',
       '/about': 'Learn about DIGIN\'s journey, vision, mission, and the dedicated team working to create positive change in communities across India.',
@@ -90,7 +89,7 @@ const DynamicTitle = () => {
     
     metaDescription.content = descriptions[location.pathname] || descriptions['/404'];
     
-    // Update Open Graph tags for social sharing
+    
     let ogTitle = document.querySelector('meta[property="og:title"]');
     let ogDescription = document.querySelector('meta[property="og:description"]');
     let ogUrl = document.querySelector('meta[property="og:url"]');
@@ -159,11 +158,7 @@ function AppContent() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/annual-reports" element={<AnnualReports />} />
             <Route path="/blog" element={<Blog />} />
-            
-            {/* Dynamic blog post routes - you can add this later when you have individual blog pages */}
-            {/* <Route path="/blog/:slug" element={<BlogPost />} /> */}
-            
-            {/* 404 Route - This should be last */}
+          
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

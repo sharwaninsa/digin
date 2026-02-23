@@ -6,7 +6,6 @@ import { Users, Calendar, Target, Eye, Award, Clock, MapPin, Mail, Phone, Chevro
 const AboutUs = () => {
   return (
     <div className="min-h-screen">
-      {/* Hero Section with Parallax */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
           <img
@@ -28,7 +27,7 @@ const AboutUs = () => {
             {aboutContent.description}
           </p>
           
-          {/* Quick Stats */}
+     
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto mt-16">
             <div className="text-center">
               <div className="text-3xl font-bold text-amber-400 mb-2">15+</div>
@@ -50,11 +49,11 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Vision & Mission Section */}
+     
       <section className="py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Vision Card */}
+            
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-amber-600 rounded-3xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity"></div>
               <div className="relative bg-white dark:bg-slate-800 p-10 rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-700">
@@ -72,7 +71,7 @@ const AboutUs = () => {
               </div>
             </div>
 
-            {/* Mission Card */}
+           
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-amber-600 rounded-3xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity"></div>
               <div className="relative bg-white dark:bg-slate-800 p-10 rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-700">
@@ -93,7 +92,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Core Values */}
+     
       <section className="py-24 bg-gradient-to-br from-amber-50 to-amber-100/50 dark:from-slate-900 dark:to-slate-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -141,7 +140,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* History Timeline */}
+     
       <section className="py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -157,7 +156,7 @@ const AboutUs = () => {
           </div>
 
           <div className="relative">
-            {/* Timeline Line */}
+          
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-amber-500 via-amber-400 to-amber-500"></div>
             
             {aboutContent.history.map((item, index) => (
@@ -197,7 +196,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Team Section */}
+     
       <section className="py-24 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -225,7 +224,7 @@ const AboutUs = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     
-                    {/* Social Links Overlay */}
+                   
                     <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 opacity-0 group-hover:opacity-100 transition-all translate-y-10 group-hover:translate-y-0">
                       <a href="#" className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-amber-500 transition-colors">
                         <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
@@ -244,7 +243,7 @@ const AboutUs = () => {
                     <p className="text-amber-600 dark:text-amber-400 font-semibold mb-4">{member.role}</p>
                     <p className="text-slate-600 dark:text-slate-400">{member.bio}</p>
                     
-                    {/* Experience Indicators */}
+                
                     <div className="flex items-center mt-6 space-x-4">
                       <div className="flex items-center">
                         <Star className="w-4 h-4 text-amber-500 mr-1" />
@@ -263,7 +262,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0">
           <img

@@ -24,7 +24,6 @@ import {
   Split
 } from 'lucide-react';
 
-// Navigation Links - Updated with new pages
 export const navigationLinks = [
   { path: '/', label: 'Home' },
   { path: '/about', label: 'About Us' },
@@ -35,7 +34,6 @@ export const navigationLinks = [
   { path: '/contact', label: 'Contact Us' }
 ];
 
-// Footer Links - Updated with all pages
 export const footerLinks = [
   { path: '/', label: 'Home' },
   { path: '/about', label: 'About Us' },
@@ -52,7 +50,6 @@ export const footerLinks = [
   { path: '/sitemap', label: 'Sitemap' }
 ];
 
-// Social Media Links
 export const socialLinks = [
   { name: 'Facebook', icon: Facebook, url: 'https://facebook.com/digin' },
   { name: 'Twitter', icon: Twitter, url: 'https://twitter.com/digin' },
@@ -60,7 +57,6 @@ export const socialLinks = [
   { name: 'YouTube', icon: Youtube, url: 'https://youtube.com/digin' }
 ];
 
-// Contact Information
 export const contactInfo = {
   address: '57, Kotla Village, Shamas Pur, East Delhi, Delhi - 110091',
   phone: '+91 99999 99999',
@@ -69,7 +65,6 @@ export const contactInfo = {
   officeHours: 'Monday - Friday: 9:00 AM - 6:00 PM'
 };
 
-// Enhanced Carousel Images
 export const carouselImages = [
   {
     url: 'https://images.unsplash.com/photo-1488521787991-1c5e3e1836c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
@@ -101,7 +96,6 @@ export const carouselImages = [
   }
 ];
 
-// Enhanced Home Page Statistics
 export const homeStats = [
   { value: '15+', label: 'Years of Service', icon: "Clock" },
   { value: '100K+', label: 'Lives Impacted', icon: "Users" },
@@ -109,7 +103,6 @@ export const homeStats = [
   { value: '500+', label: 'Active Volunteers', icon: "Heart" }
 ];
 
-// Impact Metrics
 export const impactMetrics = [
   {
     icon: Users,
@@ -131,7 +124,7 @@ export const impactMetrics = [
   }
 ];
 
-// Enhanced Home Page Features
+
 export const homeFeatures = [
   {
     icon: Heart,
@@ -159,7 +152,7 @@ export const homeFeatures = [
   }
 ];
 
-// Testimonials
+
 export const testimonials = [
   {
     name: 'Priya Sharma',
@@ -184,7 +177,7 @@ export const testimonials = [
   }
 ];
 
-// Enhanced About Us Content
+
 export const aboutContent = {
   title: 'About DIGIN',
   description: 'Dynamic Initiative for Grassroot Impact Network (DIGIN) is a premier public charitable trust established in 2026 with a visionary approach to create sustainable social impact through the strategic integration of digital media, education, and community engagement.',
@@ -252,7 +245,7 @@ export const aboutContent = {
   ]
 };
 
-// Enhanced Gallery Images
+
 export const galleryImages = [
   {
     url: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
@@ -320,7 +313,7 @@ export const galleryImages = [
   }
 ];
 
-// Enhanced Press Releases
+
 export const pressReleases = [
   {
     id: 1,
@@ -368,7 +361,7 @@ export const pressReleases = [
   }
 ];
 
-// Enhanced Mission Objectives
+
 export const missionObjectives = [
   {
     category: 'Digital Media & Education',
@@ -420,7 +413,8 @@ export const missionObjectives = [
   }
 ];
 
-// Contact Page Information
+
+
 export const contactPageInfo = {
   formFields: [
     { name: 'name', label: 'Full Name', type: 'text', required: true },
