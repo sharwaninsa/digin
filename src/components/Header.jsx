@@ -5,6 +5,8 @@ import { Menu, X, Sun, Moon, ChevronDown, Heart } from 'lucide-react';
 import { navigationLinks } from '../data/siteData';
 import { ThemeContext } from '../App';
 
+import {logo} from '../assets/logo.png'
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -44,7 +46,7 @@ const Header = () => {
                 GRASSROOT IMPACT NETWORK
               </span> */}
 
-                <img src="src/assets/logo.png" className='w-16 h-16 rounded-full' alt="" />
+                <img src={logo} className='w-16 h-16 rounded-full' alt="" />
                 </div>
 
             </div>
