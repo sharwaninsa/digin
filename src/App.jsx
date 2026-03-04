@@ -21,8 +21,8 @@ import NotFound from './pages/NotFound';
 import ScrollToTop from './components/ScrollToTop';
 import './index.css';
 import Donate from './pages/Donate';
-import BlogEditor from './components/BlogEditor';
-import BlogPost from './components/BlogPost';
+// import BlogEditor from './components/BlogEditor';
+// import BlogPost from './components/BlogPost';
 
 export const ThemeContext = createContext();
 
@@ -141,8 +141,8 @@ function AppContent() {
             <Route path="/annual-reports" element={<AnnualReports />} />
             <Route path="/blog" element={<Blog />} />
             <Route path='/donate' element={<Donate />} />
-            <Route path='/blogEditor' element={<BlogEditor />} />
-            <Route path="/blog/:slug" element={<BlogPost />} />
+            {/* <Route path='/blogEditor' element={<BlogEditor />} />
+            <Route path="/blog/:slug" element={<BlogPost />} /> */}
 
             <Route path="*" element={<NotFound />} />
           </Routes>
