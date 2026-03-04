@@ -24,6 +24,13 @@ import {
   Split
 } from 'lucide-react';
 
+import nityanandPhoto from '../assets/NityanandGayen.jpg'
+import anjulePhoto from '../assets/AnjulePhoto.jpeg'
+import rameshChandPhoto from '../assets/RameshPathak.jpg'
+import ashutoshPhoto from '../assets/AshutoshPhoto.jpg'
+import sharwanKumar from '../assets/sharwanPic.jpg'
+
+
 export const navigationLinks = [
   { path: '/', label: 'Home', labelKey: 'nav.home' },
   { path: '/about', label: 'About Us', labelKey: 'nav.about' },
@@ -209,13 +216,13 @@ export const aboutContent = {
     {
       name: 'Ramesh Chander Pathak',
       role: 'President',
-      image: 'src/assets/RameshPathak.jpg',
+      image: rameshChandPhoto,
       bio: 'Ramesh Chander Pathak is a Graphic Designing and Printing Professional with over 20+ years of extensive industry experience. Known for his creativity, precision, and commitment to excellence, he has successfully delivered high-quality design and print solutions for a wide range of clients and projects.'
     },
     {
       name: 'Nityanand Gayen',
       role: 'Vice President',
-      image: 'src/assets/NityanandGayen.jpg',
+      image: nityanandPhoto,
       bio: 'Nityanand Gayen is an independent journalist, poet, translator, and social worker with a strong commitment to people-centric reporting and social justice. Since 2006, he has been actively engaged in digital journalism, contributing analytical reports, ground stories, and opinion pieces to platforms such as Mediavigil.com, Janchowk.com, WorkersUnity.com, Junputh.com, and Followupstories.com.\n With substantial experience in print media, he worked with Swatantra Vaartha in Hyderabad as a Translator-cum-Sub-Editor, where he honed his editorial and language skills. He later launched and served as Executive Editor of the weekly tabloid Delhi Ki Selfi in New Delhi, leading the publication for two years and shaping its editorial direction.\n Alongside journalism, he remains actively involved in literary pursuits as a poet and translator, and in social initiatives that amplify marginalized voices. His work reflects a deep engagement with grassroots realities and a commitment to ethical, independent journalism.'
     },
     {
@@ -227,17 +234,17 @@ export const aboutContent = {
     {
       name: 'Ashutosh Rai',
       role: 'Treasurer',
-      image: 'src/assets/AshutoshPhoto.jpg',
+      image: ashutoshPhoto,
       bio: 'Ashutosh Rai is an economist, policy researcher, and public commentator focusing on employment, MSMEs, digital transformation, and economic governance in India. He is currently a Ph.D. Research Scholar in Economics at the Central University of Punjab and a UGC Junior Research Fellowship (JRF) awardee. His work examines how economic policies affect workers, small businesses, and the informal sector, with particular attention to minimum wages, social security, entrepreneurship, and digital inequality in post-COVID India. His doctoral research studies the digital transformation of MSMEs and its implications for productivity, inclusion, and employment. Ashutosh regularly engages in public discourse through op-eds, short-form video explainers, and policy commentary, translating complex economic data into accessible language for wider audiences. His writings have appeared in national Hindi newspapers, and his research has been published in peer-reviewed journals and edited volumes. With training in econometrics and data analysis, he brings evidence-based perspectives to debates on growth, labour markets, and development. His work aims to bridge the gap between academic research, public understanding, and policy accountability.'     },
     {
       name: 'Anjule Shyam Maurya',
       role: 'Executive Member',
-      image: 'src/assets/AnjulePhoto.jpeg',
+      image: anjulePhoto,
       bio: 'Anjule Shyam Maurya has been actively engaged in journalism and activism for several years. What began as a deep passion for journalism gradually evolved into a dedicated commitment to full-time activism. Currently, Anjule is fully devoted to social advocacy, with notable work addressing the critical issue of bride trafficking. In 2019, Maurya participated in a historic foot march from Hazaribagh to Ranchi alongside 10,000 Adivasis, raising awareness on the issues of Jal, Jungle, Zameen (water, forest, and land rights). Through sustained efforts, Anjule has worked to bring these grassroots concerns into mainstream public discourse and policy discussions',   },
     {
       name: 'Sharwan Kumar',
       role: 'Executive Member',
-      image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
+      image: sharwanKumar,
       bio: 'Young leader passionate about youth empowerment and education. Coordinates volunteer programs and youth initiatives.'
     },
     {

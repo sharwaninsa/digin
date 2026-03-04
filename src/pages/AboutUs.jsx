@@ -27,6 +27,7 @@ import {
   Share2
 } from 'lucide-react';
 
+
 const AboutUs = () => {
   const [selectedMember, setSelectedMember] = useState(null);
 
@@ -35,24 +36,26 @@ const AboutUs = () => {
     ...member,
     email: member.name.toLowerCase().replace(/\s+/g, '.') + '@digin.org.in',
     phone: '+91 98765 4321' + index,
-    location: ['Delhi, India', 'Kolkata, India', 'Lucknow, India', 'Mumbai, India', 'Bangalore, India', 'Chennai, India'][index % 6],
-    expertise: ['Digital Strategy', 'Community Development', 'Program Management', 'Research & Analysis', 'Media Relations', 'Fundraising'][index % 6],
+    location: ['Delhi, India', 'Kolkata, India', 'Delhi, India', 'Lucknow, India', 'Mau, India', 'Delhi, India', 'Delhi, India'][index % 7],
+    expertise: ['Digital Strategy', 'Community Development', 'Program Management', 'Research & Analysis', 'Media Relations', 'Fundraising', 'Guiding Youth'][index % 7],
     experience: [
-      '10+ years in NGO sector, previously worked with CRY',
-      '15 years in community development, ex-UNDP',
-      '8 years in education sector, founded 2 schools',
-      '12 years in research, published 20+ papers',
-      '7 years in tech for social good, ex-Google',
-      '9 years in fundraising, raised ₹5Cr+'
-    ][index % 6],
+      'Na',
+      'Na',
+      'Na',
+      'Na',
+      'Na',
+      'Na',
+      'Na'
+    ][index % 7],
     achievements: [
-      'Awarded "Social Worker of the Year" 2023',
-      'Recognized by Ministry of Women & Child Development',
-      'Featured in "40 Under 40" social entrepreneurs',
-      'Published author on rural development',
-      'Keynote speaker at 10+ international conferences',
-      'Recipient of the National Award for Social Justice'
-    ][index % 6],
+      'Na',
+      'Na',
+      'Na',
+      'Na',
+      'Na',
+      'Na',
+      'Na'
+    ][index % 7],
     social: {
       linkedin: '#',
       twitter: '#',
