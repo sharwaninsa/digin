@@ -25,13 +25,13 @@ import {
 } from 'lucide-react';
 
 export const navigationLinks = [
-  { path: '/', label: 'Home' },
-  { path: '/about', label: 'About Us' },
-  { path: '/mission', label: 'Our Mission' },
-  { path: '/gallery', label: 'Gallery' },
-  { path: '/press-release', label: 'Press Release' },
-  { path: '/blog', label: 'Blog' },
-  { path: '/contact', label: 'Contact Us' }
+  { path: '/', label: 'Home', labelKey: 'nav.home' },
+  { path: '/about', label: 'About Us', labelKey: 'nav.about' },
+  { path: '/mission', label: 'Our Mission', labelKey: 'nav.mission' },
+  { path: '/gallery', label: 'Gallery', labelKey: 'nav.gallery' },
+  { path: '/press-release', label: 'Press Release', labelKey: 'nav.press' },
+  { path: '/blog', label: 'Blog', labelKey: 'nav.blog' },
+  { path: '/contact', label: 'Contact Us', labelKey: 'nav.contact' }
 ];
 
 export const footerLinks = [
@@ -67,7 +67,7 @@ export const contactInfo = {
 
 export const carouselImages = [
   {
-    url: 'https://images.unsplash.com/photo-1488521787991-1c5e3e1836c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+    url: 'https://media.istockphoto.com/id/2179510179/photo/two-boys-using-a-laptop-on-a-concrete-staircase-in-a-rural-setting.webp?a=1&b=1&s=612x612&w=0&k=20&c=7xSdJ37NFtO8QN9u4z24F_8WZ6CiogOHTyJYuNrnosY=',
     title: 'Empowering Communities Through Digital Literacy',
     description: 'Bridging the digital divide in rural India with innovative education programs.',
     alt: 'Community digital literacy program',
@@ -151,32 +151,32 @@ export const homeFeatures = [
     link: '/mission'
   }
 ];
+{/*
 
-
-export const testimonials = [
-  {
-    name: 'Priya Sharma',
-    role: 'Community Leader',
-    image: 'https://images.unsplash.com/photo-1494790108777-766dab1e9c6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
-    quote: 'DIGIN transformed our village with digital literacy programs. Now our youth can compete in the modern world.',
-    rating: 5
-  },
-  {
-    name: 'Rajesh Kumar',
-    role: 'Volunteer',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
-    quote: 'Being part of DIGIN has been life-changing. The impact we create together is truly remarkable.',
-    rating: 5
-  },
-  {
-    name: 'Anita Desai',
-    role: 'Beneficiary',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
-    quote: 'Through DIGIN\'s skill training, I started my own small business. I\'m now financially independent.',
-    rating: 5
-  }
-];
-
+  export const testimonials = [
+    {
+      name: 'Priya Sharma',
+      role: 'Community Leader',
+      image: 'https://images.unsplash.com/photo-1494790108777-766dab1e9c6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
+      quote: 'DIGIN transformed our village with digital literacy programs. Now our youth can compete in the modern world.',
+      rating: 5
+    },
+    {
+      name: 'Rajesh Kumar',
+      role: 'Volunteer',
+      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
+      quote: 'Being part of DIGIN has been life-changing. The impact we create together is truly remarkable.',
+      rating: 5
+    },
+    {
+      name: 'Anita Desai',
+      role: 'Beneficiary',
+      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
+      quote: 'Through DIGIN\'s skill training, I started my own small business. I\'m now financially independent.',
+      rating: 5
+    }
+  ];
+*/}
 
 export const aboutContent = {
   title: 'About DIGIN',
@@ -208,37 +208,41 @@ export const aboutContent = {
   team: [
     {
       name: 'Ramesh Chander Pathak',
-      role: 'Founder & Managing Trustee',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
-      bio: 'Visionary leader with 15+ years in social development and digital innovation. Previously led multiple award-winning community programs.'
+      role: 'President',
+      image: 'src/assets/RameshPathak.jpg',
+      bio: 'Ramesh Chander Pathak is a Graphic Designing and Printing Professional with over 20+ years of extensive industry experience. Known for his creativity, precision, and commitment to excellence, he has successfully delivered high-quality design and print solutions for a wide range of clients and projects.'
     },
     {
       name: 'Nityanand Gayen',
-      role: 'Vice President & Media Director',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
-      bio: 'Award-winning journalist dedicated to community media and grassroots storytelling. Pioneered citizen journalism initiatives across India.'
+      role: 'Vice President',
+      image: 'src/assets/NityanandGayen.jpg',
+      bio: 'Nityanand Gayen is an independent journalist, poet, translator, and social worker with a strong commitment to people-centric reporting and social justice. Since 2006, he has been actively engaged in digital journalism, contributing analytical reports, ground stories, and opinion pieces to platforms such as Mediavigil.com, Janchowk.com, WorkersUnity.com, Junputh.com, and Followupstories.com.\n With substantial experience in print media, he worked with Swatantra Vaartha in Hyderabad as a Translator-cum-Sub-Editor, where he honed his editorial and language skills. He later launched and served as Executive Editor of the weekly tabloid Delhi Ki Selfi in New Delhi, leading the publication for two years and shaping its editorial direction.\n Alongside journalism, he remains actively involved in literary pursuits as a poet and translator, and in social initiatives that amplify marginalized voices. His work reflects a deep engagement with grassroots realities and a commitment to ethical, independent journalism.'
     },
     {
       name: 'Anand Sharma',
-      role: 'Secretary & Operations Head',
+      role: 'Secretary',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
       bio: 'Operations expert with background in corporate social responsibility. Streamlined organizational processes for maximum impact.'
     },
     {
       name: 'Ashutosh Rai',
-      role: 'Treasurer & Research Lead',
-      image: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
-      bio: 'Research scholar specializing in social development economics. Leads impact assessment and program evaluation.'
-    },
+      role: 'Treasurer',
+      image: 'src/assets/AshutoshPhoto.jpg',
+      bio: 'Ashutosh Rai is an economist, policy researcher, and public commentator focusing on employment, MSMEs, digital transformation, and economic governance in India. He is currently a Ph.D. Research Scholar in Economics at the Central University of Punjab and a UGC Junior Research Fellowship (JRF) awardee. His work examines how economic policies affect workers, small businesses, and the informal sector, with particular attention to minimum wages, social security, entrepreneurship, and digital inequality in post-COVID India. His doctoral research studies the digital transformation of MSMEs and its implications for productivity, inclusion, and employment. Ashutosh regularly engages in public discourse through op-eds, short-form video explainers, and policy commentary, translating complex economic data into accessible language for wider audiences. His writings have appeared in national Hindi newspapers, and his research has been published in peer-reviewed journals and edited volumes. With training in econometrics and data analysis, he brings evidence-based perspectives to debates on growth, labour markets, and development. His work aims to bridge the gap between academic research, public understanding, and policy accountability.'     },
+    {
+      name: 'Anjule Shyam Maurya',
+      role: 'Executive Member',
+      image: 'src/assets/AnjulePhoto.jpeg',
+      bio: 'Anjule Shyam Maurya has been actively engaged in journalism and activism for several years. What began as a deep passion for journalism gradually evolved into a dedicated commitment to full-time activism. Currently, Anjule is fully devoted to social advocacy, with notable work addressing the critical issue of bride trafficking. In 2019, Maurya participated in a historic foot march from Hazaribagh to Ranchi alongside 10,000 Adivasis, raising awareness on the issues of Jal, Jungle, Zameen (water, forest, and land rights). Through sustained efforts, Anjule has worked to bring these grassroots concerns into mainstream public discourse and policy discussions',   },
     {
       name: 'Sharwan Kumar',
-      role: 'Trustee & Youth Coordinator',
+      role: 'Executive Member',
       image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
       bio: 'Young leader passionate about youth empowerment and education. Coordinates volunteer programs and youth initiatives.'
     },
     {
       name: 'Himmat Singh',
-      role: 'Trustee & Media Advisor',
+      role: 'Executive Member',
       image: 'https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
       bio: 'Experienced journalist and media consultant. Guides DIGIN\'s communication strategy and media partnerships.'
     }

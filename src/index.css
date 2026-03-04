@@ -130,3 +130,122 @@
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.high-contrast {
+  --contrast-filter: contrast(1.2) brightness(1.1);
+}
+
+.high-contrast * {
+  border-color: currentColor !important;
+}
+
+.high-contrast a {
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+
+.high-contrast button:not([disabled]),
+.high-contrast .btn,
+.high-contrast [role="button"] {
+  border: 2px solid currentColor !important;
+}
+
+.high-contrast img {
+  filter: var(--contrast-filter);
+}
+
+.high-contrast .bg-gradient-to-r,
+.high-contrast .bg-gradient-to-br,
+.high-contrast .bg-gradient-to-t {
+  background-image: none !important;
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+
+.high-contrast .dark .bg-gradient-to-r,
+.high-contrast .dark .bg-gradient-to-br,
+.high-contrast .dark .bg-gradient-to-t {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 2px solid #000 !important;
+}
+
+/* Font Size Transitions */
+* {
+  transition: font-size 0.2s ease;
+}
+
+/* Quill Editor Custom Styles */
+.ql-container {
+  @apply font-sans text-base;
+}
+
+.ql-editor {
+  @apply min-h-[400px] text-slate-900 dark:text-slate-100;
+}
+
+.ql-editor.ql-blank::before {
+  @apply text-slate-400 dark:text-slate-600;
+}
+
+.ql-toolbar {
+  @apply border-b border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 rounded-t-2xl;
+}
+
+.ql-toolbar button {
+  @apply text-slate-700 dark:text-slate-300;
+}
+
+.ql-toolbar button:hover {
+  @apply text-amber-600 dark:text-amber-400;
+}
+
+.ql-toolbar .ql-active {
+  @apply text-amber-600 dark:text-amber-400;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Prose styles for preview */
+.prose {
+  @apply max-w-none;
+}
+
+.prose h1 {
+  @apply text-4xl font-bold mb-6;
+}
+
+.prose h2 {
+  @apply text-3xl font-semibold mb-4;
+}
+
+.prose h3 {
+  @apply text-2xl font-semibold mb-3;
+}
+
+.prose p {
+  @apply mb-4 leading-relaxed;
+}
+
+.prose img {
+  @apply rounded-xl shadow-lg my-8;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-amber-500 pl-4 italic my-4;
+}

@@ -50,7 +50,7 @@ const Footer = () => {
               <div className="relative">
                 <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full cursor-pointer rotate-3 group-hover:rotate-6 transition-all duration-300 shadow-lg shadow-amber-500/30"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                 <img src={logo} alt="" className='rounded-full' />
+                 <img src={logo} alt="" className='rounded-full w-14 h-14' />
                 </div>
               </div>
               <div>

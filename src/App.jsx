@@ -1,5 +1,7 @@
+// App.jsx - Updated with AppProvider
 import React, { useState, useEffect, createContext } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { AppProvider, useApp } from './context/AppContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -18,10 +20,13 @@ import Blog from './pages/Blog';
 import NotFound from './pages/NotFound';
 import ScrollToTop from './components/ScrollToTop';
 import './index.css';
+import Donate from './pages/Donate';
+import BlogEditor from './components/BlogEditor';
+import BlogPost from './components/BlogPost';
 
 export const ThemeContext = createContext();
 
-
+// Title configuration for each route
 const routeTitles = {
   '/': 'Home | DIGIN - Dynamic Initiative for Grassroot Impact Network',
   '/about': 'About Us | DIGIN - Our Story & Mission',
@@ -36,32 +41,27 @@ const routeTitles = {
   '/faq': 'FAQ | DIGIN - Frequently Asked Questions',
   '/annual-reports': 'Annual Reports | DIGIN - Transparency & Accountability',
   '/blog': 'Blog | DIGIN - Stories of Impact',
+  '/blogEditor': 'Create Blog Post | DIGIN - Stories of Impact',
   '/404': 'Page Not Found | DIGIN - Lost in Cyberspace'
 };
 
-
+// Dynamic Title Component
 const DynamicTitle = () => {
   const location = useLocation();
   
   useEffect(() => {
     const getTitle = () => {
- 
       if (routeTitles[location.pathname]) {
         return routeTitles[location.pathname];
       }
-      
-  
       if (location.pathname.startsWith('/blog/')) {
         return 'Blog Post | DIGIN - Stories of Impact';
       }
-      
-     
       return routeTitles['/404'];
     };
 
     document.title = getTitle();
     
-   
     let metaDescription = document.querySelector('meta[name="description"]');
     if (!metaDescription) {
       metaDescription = document.createElement('meta');
@@ -69,7 +69,6 @@ const DynamicTitle = () => {
       document.head.appendChild(metaDescription);
     }
     
-   
     const descriptions = {
       '/': 'DIGIN (Dynamic Initiative for Grassroot Impact Network) is a public charitable trust working towards creating sustainable social impact through digital media, education, and community engagement.',
       '/about': 'Learn about DIGIN\'s journey, vision, mission, and the dedicated team working to create positive change in communities across India.',
@@ -89,33 +88,6 @@ const DynamicTitle = () => {
     
     metaDescription.content = descriptions[location.pathname] || descriptions['/404'];
     
-    
-    let ogTitle = document.querySelector('meta[property="og:title"]');
-    let ogDescription = document.querySelector('meta[property="og:description"]');
-    let ogUrl = document.querySelector('meta[property="og:url"]');
-    
-    if (!ogTitle) {
-      ogTitle = document.createElement('meta');
-      ogTitle.setAttribute('property', 'og:title');
-      document.head.appendChild(ogTitle);
-    }
-    
-    if (!ogDescription) {
-      ogDescription = document.createElement('meta');
-      ogDescription.setAttribute('property', 'og:description');
-      document.head.appendChild(ogDescription);
-    }
-    
-    if (!ogUrl) {
-      ogUrl = document.createElement('meta');
-      ogUrl.setAttribute('property', 'og:url');
-      document.head.appendChild(ogUrl);
-    }
-    
-    ogTitle.content = getTitle();
-    ogDescription.content = descriptions[location.pathname] || descriptions['/404'];
-    ogUrl.content = `https://digin.org${location.pathname}`;
-    
   }, [location]);
 
   return null;
@@ -126,6 +98,16 @@ function AppContent() {
     const savedTheme = localStorage.getItem('theme');
     return savedTheme ? savedTheme === 'dark' : false;
   });
+  
+  const { toggleLanguage } = useApp();
+
+  // Expose toggleLanguage to window for the Header component
+  useEffect(() => {
+    window.toggleLanguage = toggleLanguage;
+    return () => {
+      delete window.toggleLanguage;
+    };
+  }, [toggleLanguage]);
 
   useEffect(() => {
     if (darkMode) {
@@ -158,7 +140,10 @@ function AppContent() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/annual-reports" element={<AnnualReports />} />
             <Route path="/blog" element={<Blog />} />
-          
+            <Route path='/donate' element={<Donate />} />
+            <Route path='/blogEditor' element={<BlogEditor />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
@@ -171,7 +156,9 @@ function AppContent() {
 function App() {
   return (
     <Router>
-      <AppContent />
+      <AppProvider>
+        <AppContent />
+      </AppProvider>
     </Router>
   );
 }
